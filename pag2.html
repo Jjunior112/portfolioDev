@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pokedex</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://jjunior112.github.io/estilos/style_projeto1.css">
+        <link rel="stylesheet" href="https://jjunior112.github.io/estilos/reset_projeto1.css">
+        <link rel="stylesheet" href="https://jjunior112.github.io/estilos/scrollbar_projeto1.css">
+        
+	</head>
+	<body class="modo-claro">
+		<header>
+			<a href="#" id="pokebola">
+				<img src="https://jjunior112.github.io/imagens/pokeball.png" alt="pokebola" class="logo"  />
+			</a>
+			<a href="https://jjunior112.github.io/Portfolio_dev/PokeRex.html" id="game">
+				<img src="https://jjunior112.github.io/imagens/mini-game-escuro.png" alt="mini-game" class="game" />
+			</a>
+			<button id="botao-alterar-tema">
+				<img src="https://jjunior112.github.io/imagens/moon.png" alt="imagem do sol" class="imagem-botao" />
+			</button>
+		</header>
+		<div class="game">
+			<span class="score"></span>
+			<div class="dino"></div>
+			<div class="cacto"></div>
+		</div>
+		<main class="empty" id="empty">
+			<ul class="listagem-pokemon">
+				<li class="cartao-pokemon" id="bulbasaur">
+					<div class="informacoes">
+						<span>Bulbasaur</span>
+						<span>#001</span>
+					</div>
+
+					<img src="https://jjunior112.github.io/imagens/bulbasaur.gif" alt="Bulbasaur" class="gif" />
+
+					<ul class="tipos">
+						<li class="tipo grama">Grama</li>
+						<li class="tipo veneno">Veneno</li>
+					</ul>
+
+					<p class="descricao">Há uma semente de planta em suas costas desde o dia que este Pókemon nasce. A semente cresce lentamente.</p>
+				</li>
+
+				<li class="cartao-pokemon">
+					<div class="informacoes">
+						<span>Ivysaur</span>
+						<span>#002</span>
+					</div>
+
+					<img src="https://jjunior112.github.io/imagens/ivysaur.gif" alt="Ivysaur" class="gif" />
+
+					<ul class="tipos">
+						<li class="tipo grama">Grama</li>
+						<li class="tipo veneno">Veneno</li>
+					</ul>
+
+					<p class="descricao">Quando o bulbo em suas costas cresce, parece perder a capacidade de ficar de pé em suas patas traseiras.</p>
+				</li>
+
+				<li class="cartao-pokemon">
+					<div class="informacoes">
+						<span>Venusaur</span>
+						<span>#003</span>
+					</div>
+
+					<img src="https://jjunior112.github.io/imagens/venusaur.gif" alt="Venusaur" class="gif" />
+
+					<ul class="tipos">
+						<li class="tipo grama">Grama</li>
+						<li class="tipo veneno">Veneno</li>
+					</ul>
+
+					<p class="descricao">Sua planta floresce quando está absorvendo energia solar. Ele permanece em movimento para buscar a luz solar.</p>
+				</li>
+
+				<li class="cartao-pokemon">
+					<div class="informacoes">
+						<span>Charmander</span>
+						<span>#004</span>
+					</div>
+
+					<img src="https://jjunior112.github.io/imagens/charmander.gif" alt="Charmander" class="gif" />
+
+					<ul class="tipos">
+						<li class="tipo fogo">Fogo</li>
+					</ul>
+
+					<p class="descricao">Tem preferência por coisas quentes. Quando chove, diz-se que o vapor jorra da ponta de sua cauda.</p>
+				</li>
+
+				<li class="cartao-pokemon">
+					<div class="informacoes">
+						<span>Charmeleon</span>
+						<span>#005</span>
+					</div>
+
+					<img src="https://jjunior112.github.io/imagens/charmeleon.gif" alt="Charmeleon" class="gif" />
+
+					<ul class="tipos">
+						<li class="tipo fogo">Fogo</li>
+					</ul>
+
+					<p class="descricao">Tem uma natureza bárbara. Na batalha, ele chicoteia sua cauda ardente e corta com garras afiadas.</p>
+				</li>
+
+				<li class="cartao-pokemon">
+					<div class="informacoes">
+						<span>Charizard</span>
+						<span>#006</span>
+					</div>
+
+					<img src="https://jjunior112.github.io/imagens/charizard.gif" alt="Charizard" class="gif" />
+
+					<ul class="tipos">
+						<li class="tipo fogo">Fogo</li>
+					</ul>
+
+					<p class="descricao">Ele cospe fogo que é quente o suficiente para derreter pedregulhos. Pode causar incêndios florestais soprando chamas.</p>
+				</li>
+
+				<li class="cartao-pokemon">
+					<div class="informacoes">
+						<span>Squirtle</span>
+						<span>#007</span>
+					</div>
+
+					<img src="https://jjunior112.github.io/imagens/squirtle.gif" alt="Squirtle" class="gif" />
+
+					<ul class="tipos">
+						<li class="tipo agua">Água</li>
+					</ul>
+
+					<p class="descricao">Quando ele retrai seu longo pescoço em sua concha, ele esguicha água com força vigorosa.</p>
+				</li>
+
+				<li class="cartao-pokemon">
+					<div class="informacoes">
+						<span>Wartortle</span>
+						<span>#008</span>
+					</div>
+
+					<img src="https://jjunior112.github.io/imagens/wartortle.gif" alt="Wartortle" class="gif" />
+
+					<ul class="tipos">
+						<li class="tipo agua">Água</li>
+					</ul>
+
+					<p class="descricao">É reconhecido como um símbolo de longevidade. Se sua concha tem algas, esse Wartortle é muito antigo.</p>
+				</li>
+
+				<li class="cartao-pokemon">
+					<div class="informacoes">
+						<span>Blastoise</span>
+						<span>#009</span>
+					</div>
+
+					<img src="https://jjunior112.github.io/imagens/blastoise.gif" alt="Blastoise" class="gif" />
+
+					<ul class="tipos">
+						<li class="tipo agua">Água</li>
+					</ul>
+
+					<p class="descricao">Ele esmaga seu inimigo sob seu corpo pesado para causar desmaios. Em uma pitada, ele se retirará dentro de sua concha.</p>
+				</li>
+
+				<li class="cartao-pokemon">
+					<div class="informacoes">
+						<span>Caterpie</span>
+						<span>#010</span>
+					</div>
+
+					<img src="https://jjunior112.github.io/imagens/caterpie.gif" alt="Caterpie" class="gif" />
+
+					<ul class="tipos">
+						<li class="tipo inseto">Inseto</li>
+					</ul>
+
+					<p class="descricao">Para proteção, ele libera um fedor horrível da antena em sua cabeça para afastar os inimigos.</p>
+				</li>
+				<li class="cartao-pokemon">
+					<div class="informacoes">
+						<span>Eevee</span>
+						<span>#011</span>
+					</div>
+
+					<img src="https://jjunior112.github.io/imagens/eevee.gif" alt="Eevee" class="gif" />
+
+					<ul class="tipos">
+						<li class="tipo normal">Normal</li>
+					</ul>
+
+					<p class="descricao">Eevee tem uma composição genética instável que, de repente se transforma devido ao ambiente em que vive. Radiação de várias pedras faz com que esse Pokémon evolua.</p>
+				</li>
+				<li class="cartao-pokemon">
+					<div class="informacoes">
+						<span>Meowth</span>
+						<span>#012</span>
+					</div>
+
+					<img src="https://jjunior112.github.io/imagens/meowth.gif" alt="meowth" class="gif" />
+
+					<ul class="tipos">
+						<li class="tipo normal">Normal</li>
+					</ul>
+
+					<p class="descricao">Meowth esconde suas garras afiadas dentro de suas patas para entrar sorrateiramente e não dar nenhum passo que possa lhe incriminar. Por alguma razão, este Pokémon ama moedas reluzentes que brilham mais ainda com a luz.</p>
+				</li>
+				<li class="cartao-pokemon">
+					<div class="informacoes">
+						<span>Pikachu</span>
+						<span>#013</span>
+					</div>
+
+					<img src="https://jjunior112.github.io/imagens/pikachu.gif" alt="pikachu" class="gif" />
+
+					<ul class="tipos">
+						<li class="tipo eletrico">Eletricidade</li>
+					</ul>
+
+					<p class="descricao">Toda vez que Pikachu dá de cara com algo novo, ele o acerta com uma descarga elétrica. Se você se deparar com um fruto torrado, é uma evidência de que esse Pokémon errou na intensidade de energia de sua descarga elétrica.</p>
+				</li>
+				<li class="cartao-pokemon">
+					<div class="informacoes">
+						<span>Totodile</span>
+						<span>#014</span>
+					</div>
+
+					<img src="https://jjunior112.github.io/imagens/totodile.gif" alt="totodile" class="gif" />
+
+					<ul class="tipos">
+						<li class="tipo agua">Agua</li>
+					</ul>
+
+					<p class="descricao">Esta criatura brusca mastiga qualquer objeto em movimento que ele vê. Não é recomendável dar as costas</p>
+				</li>
+				<li class="cartao-pokemon">
+					<div class="informacoes">
+						<span>Bellossom</span>
+						<span>#015</span>
+					</div>
+
+					<img src="https://jjunior112.github.io/imagens/bellossom.gif" alt="bellossom" class="gif" />
+
+					<ul class="tipos">
+						<li class="tipo grama">Grama</li>
+					</ul>
+
+					<p class="descricao">Quando elas dançam juntas, suas pétalas se esfregam, produzindo sons bonitos e relaxantes.</p>
+				</li>
+			</ul>
+		</main>
+		<script src="https://jjunior112.github.io/scripts/script_projeto1.js"></script>
+	</body>
+</html>
