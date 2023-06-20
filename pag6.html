@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    <link rel="stylesheet" href="https://jjunior112.github.io/estilos/style_projeto6.css">
+</head>
+
+<body>
+   
+    <nav id="nav">
+
+        <ul>
+            <li><a href="#home"><img src="https://jjunior112.github.io/imagens/logo_projeto6.png" alt="logo"></a></li>
+            <li>
+                <ul>
+                    <li><a href="#empresa">Empresa</a></li>
+                    <li><a href="#sobrenos">Sobre Nós</a></li>
+                    <li><a href="#plataforma">Plataforma</a></li>
+                    <li><a href="#form">Contato</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="fundo" id="home">
+        <div class="slider" >
+
+            <div class="slides">
+                <input type="radio" name="radio" id="radio1">
+                <input type="radio" name="radio" id="radio2">
+                <input type="radio" name="radio" id="radio3">
+                <input type="radio" name="radio" id="radio4">
+
+                <div class="slide first"><img src="https://jjunior112.github.io/imagens/slider1_projeto6.jpg" alt=""></div>
+                <div class="slide"><img src="https://jjunior112.github.io/imagens/slider2_projeto6.jpg" alt=""></div>
+                <div class="slide"><img src="https://jjunior112.github.io/imagens/slider3_projeto6.jpg" alt=""></div>
+                <div class="slide"><img src="https://jjunior112.github.io/imagens/slider4_projeto6.jpg" alt=""></div>
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+
+            </div>
+
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </div>
+    </div>
+
+    <section id="empresa">
+        <h1>CodeMaster ProLearn</h1>
+        <p> Bem-vindo(a) à CodeMaster ProLearn, onde você pode aprender front end, back end e a
+            área de dados, tudo em um só lugar! Estamos entusiasmados em apresentar nossas soluções abrangentes para
+            ajudar você a desenvolver suas habilidades técnicas e impulsionar sua carreira na área de programação.</p>
+    </section>
+    <div class="fundo"></div>
+    <section id="sobrenos">
+        <h1>Sobre nós</h1>
+        <p>Nós somos uma equipe de entusiastas da programação apaixonados por compartilhar conhecimento e tornar a
+            aprendizagem de programação mais acessível a todos. Acreditamos que a educação em programação deve ser
+            prática, envolvente e centrada no aluno. Nossa plataforma foi cuidadosamente projetada para fornecer
+            recursos abrangentes que atendam às suas necessidades de aprendizado.</p>
+    </section>
+    <div class="fundo"></div>
+    <section id="plataforma">
+        <h1>Plataforma</h1>
+        <ul>
+            <li>
+                <h3>Cursos</h3>
+                <p>Oferecemos uma ampla variedade de cursos de programação, desde os fundamentos até os tópicos
+                    avançados. Nossos cursos são projetados por especialistas do setor e são atualizados regularmente
+                    para
+                    garantir que você esteja sempre aprendendo as tecnologias mais recentes. Você terá acesso a aulas em
+                    vídeo,
+                    materiais de leitura complementares e exercícios práticos para consolidar seu conhecimento.</p>
+            </li>
+
+            <li>
+                <h3>Desafios</h3>
+                <p>
+                    Desafie-se com nossa seção de desafios interativos. Aqui, você pode aplicar seus conhecimentos
+                    em programação, resolver problemas reais e aprimorar suas habilidades práticas. Os desafios são
+                    projetados
+                    para fornecer um ambiente de aprendizado prático, onde você pode experimentar e desenvolver sua
+                    lógica
+                    de
+                    programação.
+                </p>
+            </li>
+
+            <li>
+                <h3>Wiki</h3>
+                <p>
+                    Acesse nossa extensa Wiki, uma biblioteca de conhecimento que cobre uma ampla gama de tópicos
+                    relacionados à programação. Encontre informações detalhadas sobre linguagens de programação,
+                    frameworks,
+                    bibliotecas e conceitos fundamentais. A Wiki é uma ferramenta útil para consultar quando você
+                    precisa de
+                    uma
+                    explicação clara e concisa de um determinado conceito ou termo.
+                </p>
+            </li>
+
+            <li>
+                <h3>Fórum</h3>
+                <p>
+                    Conecte-se com outros alunos e instrutores em nosso fórum de discussão. Compartilhe suas dúvidas,
+                    ideias e experiências, e receba feedback valioso da comunidade. O fórum é um espaço colaborativo
+                    onde
+                    você
+                    pode interagir com pessoas que compartilham o mesmo interesse pela programação, expandindo sua rede
+                    profissional e aprendendo com os outros.
+                </p>
+            </li>
+
+            <li>
+                <h3>Vídeos</h3>
+                <p>
+                    Aprenda de forma interativa com nossos vídeos sob demanda. Nossos instrutores especializados
+                    compartilham seu conhecimento e experiência por meio de tutoriais em vídeo, abrangendo uma ampla
+                    variedade
+                    de tópicos de programação. Você pode assistir aos vídeos no seu próprio ritmo, pausar e voltar
+                    sempre
+                    que
+                    necessário.
+                </p>
+            </li>
+        </ul>
+    </section>
+    <div class="fundo"></div>
+    <section id="form">
+        <h1>Contato</h1>
+        <form onSubmit="sendForm()" id="form">
+
+            <div>
+                <p>Nome</p>
+                <input type="text" name="name" id="name" placeholder="Digite seu  nome" class="input-area" required>
+            </div>
+            <div>
+                <p>Email</p>
+                <input type="email" name="email" id="email" placeholder="Digite seu  email" class="input-area" required>
+            </div>
+            <div>
+                <p>Telefone</p>
+                <input type="tel" name="phone" id="phone" placeholder="Digite seu telefone " class="input-area" required>
+            </div>
+            <div>
+                <p>Qual opção melhor descreve sua ocupação atual?</p>
+                <select name="role" id="role" class="input-area" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="student">Estudante</option>
+                    <option value="full-time-job">Trabalho em tempo integral</option>
+                    <option value="full-time-learner">Estágio</option>
+                    <option value="prefer-not-to-say">Prefere não dizer</option>
+                    <option value="other">Outra</option>
+                </select>
+            </div>
+
+            <div>
+                <p>Sobre qual assunto é sua dúvida ou sugestão?</p>
+                <select name="feature" id="feature" class="input-area" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="project">Projetos</option>
+                    <option value="challenges">Desafios</option>
+                    <option value="community">Comunidade</option>
+                    <option value="open-source">Open source</option>
+                </select>
+
+            </div>
+
+            <div>
+                <p>Dúvidas ou sugestões</p>
+                <textarea name="comments" id="comments" cols="30" rows="6"
+                    placeholder="Digite sua dúvida ou sugestão" required></textarea>
+            </div>
+            <div class="lgpd">
+                <input type="checkbox" name="lgpd" id="lgpd" required>
+                <label for="lgpd">Concordo com os termos de privacidade</label>
+            </div>
+            <p class="message-field-none" id="message-field">Mensagem enviada com sucesso!!!</p>
+
+            <input type="submit" id="submit" value="Enviar" class="input-area">
+
+
+        </form>
+    </section>
+    <script src="https://jjunior112.github.io/scripts/script_projeto6.js"></script>
+</body>
+
+</html>
