@@ -17,15 +17,15 @@
     </header>
     <main>
 
-        <form action="#">
+        <form onsubmit="sendData()" id="form">
 
             <div >
                 <p>Nome</p>
-                <input type="text" name="name" id="name" placeholder="Digite seu  nome" class="input-area">
+                <input type="text" name="name" id="name" placeholder="Digite seu  nome" class="input-area" required>
             </div>
             <div >
                 <p>Email</p>
-                <input type="email" name="email" id="email" placeholder="Digite seu  email" class="input-area">
+                <input type="email" name="email" id="email" placeholder="Digite seu  email" class="input-area" required>
             </div>
             <div  >
                 <p>Idade(opcional)</p>
@@ -33,7 +33,7 @@
             </div>
             <div  >
                 <p>Qual opção melhor descreve sua ocupação atual?</p>
-                <select name="role" id="role" class="input-area">
+                <select name="role" id="role" class="input-area" required>
                     <option value="">Selecione uma opção</option>
                     <option value="student">Estudante</option>
                     <option value="full-time-job">Trabalho em tempo integral</option>
@@ -59,7 +59,7 @@
             </div>
             <div >
                 <p>Qual sua atividade favorita?</p>
-                <select name="feature" id="feature" class="input-area">
+                <select name="feature" id="feature" class="input-area" required>
                     <option value="">Selecione uma opção</option>
                     <option value="project">Projetos</option>
                     <option value="challenges">Desafios</option>
@@ -111,16 +111,24 @@
             <div>
                 <p>Comentários ou sugestões</p>
                 <textarea name="comments" id="comments" cols="30" rows="6"
-                    placeholder="Digite seu comentário ou sugestão"></textarea>
+                    placeholder="Digite seu comentário ou sugestão" required></textarea>
+            </div>
+            <div class="lgpd">
+                <input type="checkbox" name="lgpd" id="lgpd" required>
+                <label for="lgpd">Concordo com os termos de privacidade</label>
             </div>
 
             <input type="submit" id="submit" value="Enviar"  class="input-area">
 
 
         </form>
+        <div id="messageSuccess" class="showMessage">
+            <p >Enquete enviada com sucesso!!!</p>
+        </div>
 
 
     </main>
+    <script src="https://jjunior112.github.io/scripts/script_projeto3.js"></script>
 </body>
 
 </html>
