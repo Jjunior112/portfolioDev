@@ -1,60 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Parallax</title>
-    <link rel="stylesheet" href="https://jjunior112.github.io/estilos/style_projeto6.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://jjunior112.github.io/estilos/style.css">
 </head>
 
 <body>
-   
-    <nav id="nav">
-
-        <ul>
-            <li><a href="#home"><img src="https://jjunior112.github.io/imagens/logo_projeto6.png" alt="logo"></a></li>
-            <li>
-                <ul>
-                    <li><a href="#empresa">Empresa</a></li>
-                    <li><a href="#sobrenos">Sobre Nós</a></li>
-                    <li><a href="#plataforma">Plataforma</a></li>
-                    <li><a href="#form">Contato</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-    <div class="fundo" id="home">
-        <div class="slider" >
-
-            <div class="slides">
-                <input type="radio" name="radio" id="radio1">
-                <input type="radio" name="radio" id="radio2">
-                <input type="radio" name="radio" id="radio3">
-                <input type="radio" name="radio" id="radio4">
-
-                <div class="slide first"><img src="https://jjunior112.github.io/imagens/slider1_projeto6.jpg" alt=""></div>
-                <div class="slide"><img src="https://jjunior112.github.io/imagens/slider2_projeto6.jpg" alt=""></div>
-                <div class="slide"><img src="https://jjunior112.github.io/imagens/slider3_projeto6.jpg" alt=""></div>
-                <div class="slide"><img src="https://jjunior112.github.io/imagens/slider4_projeto6.jpg" alt=""></div>
-
-                <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
+    <!--NavBar-->
+    <div id="nav">
+        <nav class="navbar navbar-expand-lg fixed-top  " style='background-color: #20A6FF; height: 50px;'>
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="#home"><img
+                        src="https://jjunior112.github.io/imagens/logo_projeto6.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title logo" id="offcanvasNavbarLabel"><img
+                                src="https://jjunior112.github.io/imagens/logo_projeto6.png" alt=""></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body ">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#empresa">Empresa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#sobrenos">Sobre nós</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#plataforma">Plataforma</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#form">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+            </div>
+        </nav>
+    </div>
+  
+    <!--Slider-->
+
+    <div id="home">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+
 
             </div>
-
-            <div class="manual-navigation">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-                <label for="radio4" class="manual-btn"></label>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://jjunior112.github.io/imagens/slider1_projeto6.jpg" class="d-block w-100"
+                        alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://jjunior112.github.io/imagens/slider2_projeto6.jpg" class="d-block w-100"
+                        alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://jjunior112.github.io/imagens/slider3_projeto6.jpg" class="d-block w-100"
+                        alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://jjunior112.github.io/imagens/slider4_projeto6.jpg" class="d-block w-100"
+                        alt="...">
+                </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
         </div>
     </div>
+
+    <!--Empresa-->
 
     <section id="empresa">
         <h1>CodeMaster ProLearn</h1>
@@ -62,7 +105,13 @@
             área de dados, tudo em um só lugar! Estamos entusiasmados em apresentar nossas soluções abrangentes para
             ajudar você a desenvolver suas habilidades técnicas e impulsionar sua carreira na área de programação.</p>
     </section>
+
+    <!--Fundo-->
+
     <div class="fundo"></div>
+
+    <!-- Sobre nós-->
+
     <section id="sobrenos">
         <h1>Sobre nós</h1>
         <p>Nós somos uma equipe de entusiastas da programação apaixonados por compartilhar conhecimento e tornar a
@@ -70,7 +119,13 @@
             prática, envolvente e centrada no aluno. Nossa plataforma foi cuidadosamente projetada para fornecer
             recursos abrangentes que atendam às suas necessidades de aprendizado.</p>
     </section>
+
+    <!--Fundo-->
+
     <div class="fundo"></div>
+
+    <!-- Plataforma-->
+
     <section id="plataforma">
         <h1>Plataforma</h1>
         <ul>
@@ -136,7 +191,13 @@
             </li>
         </ul>
     </section>
+
+    <!--Fundo-->
+
     <div class="fundo"></div>
+
+    <!--Contato-->
+
     <section id="form">
         <h1>Contato</h1>
         <form onSubmit="sendForm()" id="form">
@@ -151,7 +212,8 @@
             </div>
             <div>
                 <p>Telefone</p>
-                <input type="tel" name="phone" id="phone" placeholder="Digite seu telefone " class="input-area" required>
+                <input type="tel" name="phone" id="phone" placeholder="Digite seu telefone " class="input-area"
+                    required>
             </div>
             <div>
                 <p>Qual opção melhor descreve sua ocupação atual?</p>
@@ -179,8 +241,8 @@
 
             <div>
                 <p>Dúvidas ou sugestões</p>
-                <textarea name="comments" id="comments" cols="30" rows="6"
-                    placeholder="Digite sua dúvida ou sugestão" required></textarea>
+                <textarea name="comments" id="comments" cols="30" rows="6" placeholder="Digite sua dúvida ou sugestão"
+                    required></textarea>
             </div>
             <div class="lgpd">
                 <input type="checkbox" name="lgpd" id="lgpd" required>
@@ -189,11 +251,17 @@
             <p class="message-field-none" id="message-field">Mensagem enviada com sucesso!!!</p>
 
             <input type="submit" id="submit" value="Enviar" class="input-area">
-
-
         </form>
     </section>
+
+    <!--scripts-->
+
     <script src="https://jjunior112.github.io/scripts/script_projeto6.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
