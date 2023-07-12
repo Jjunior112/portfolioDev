@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Conversor de Texto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://jjunior112.github.io/estilos/
+    style_textConverter.css">
+</head>
+
+<body>
+
+    <!--NavBar-->
+
+    <nav>
+        <div class="container-fluid">
+            <a class="logo" href="/"><img src="https://jjunior112.github.io/imagens/logo_textConverter.png"
+                    alt="logo da pagina contendo um c maiusculo e um t minusculo"></a>
+        </div>
+    </nav>
+
+    <!--Descricao-->
+
+    <section>
+        <h1>Conversor de texto</h1>
+        <p>O conversor de texto é uma ferramenta versátil que permite modificar o texto de três maneiras diferentes:
+            maiúsculo, minúsculo e inverter o texto.</p>
+    </section>
+
+    <!--Text area-->
+
+    <div id="text">
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Digite aqui o texto que deseja converter" id="floatingTextarea2"
+                style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Texto</label>
+        </div>
+    </div>
+    <!--Funções-->
+
+    <div class="btn-group" role="group" aria-label="Basic mixed styles example" style="margin-top: 1em;">
+        <button type="button" class=" btn btn-outline-primary" onclick="upper()">CAIXA ALTA</button>
+        <button type="button" id="upper" class=" btn btn-outline-danger" onclick="lower()">caixa baixa </button>
+        <button type="button" class=" btn btn-outline-info " onclick="reverse()">inverter</button>
+    </div>
+
+    <!--Resultado-->
+
+    <div class="form-floating result">
+
+        <textarea class="form-control" placeholder="O resultado aparecerá aqui" id="result"
+            style="height: 100px"></textarea>
+        <label for="result">Resultado</label>
+    </div>
+
+
+
+    <!--Scripts-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://jjunior112.github.io/scripts/script_textConverter.js"></script>
+</body>
+
+</html>
